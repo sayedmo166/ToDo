@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 class AppTheme {
   static Color primary = Color(0xFF5D9CEC);
   static Color white = Color(0xFFFFFFFF);
+  static Color black = Color(0xFF0D0F15);
+
   static Color red = Color(0xFFEC4B4B);
   static Color backroundLight = Color(0xFFDFECDB);
   static Color backroundDark = Color(0xFF060E1E);
@@ -31,6 +33,25 @@ static ThemeData lightTheme = ThemeData(
         side: BorderSide(
       width: 4,
       color: white,),),
+  ),
+
+
+textTheme: TextTheme(
+  titleMedium: TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+    color: black,
+
+  ),
+  titleSmall: TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+    color: backroundDark,
+  ),
+),
+  elevatedButtonTheme: ElevatedButtonThemeData(
+    style: ElevatedButton.styleFrom(backgroundColor: primary,
+    ),
   ),
 );
   static ThemeData darkTheme = ThemeData();
